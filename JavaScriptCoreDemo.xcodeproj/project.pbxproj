@@ -15,6 +15,8 @@
 		56EF1BE41F3DA5C700B29691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EF1BE21F3DA5C700B29691 /* LaunchScreen.storyboard */; };
 		56EF1BEF1F3DA5C700B29691 /* JavaScriptCoreDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EF1BEE1F3DA5C700B29691 /* JavaScriptCoreDemoTests.m */; };
 		56EF1BFA1F3DA5C700B29691 /* JavaScriptCoreDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EF1BF91F3DA5C700B29691 /* JavaScriptCoreDemoUITests.m */; };
+		56EF1C091F3DA5FC00B29691 /* OCJSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EF1C081F3DA5FC00B29691 /* OCJSManager.m */; };
+		56EF1C0D1F3DA86500B29691 /* JavaScriptCoreDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 56EF1C0C1F3DA86500B29691 /* JavaScriptCoreDemo.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		56EF1BF51F3DA5C700B29691 /* JavaScriptCoreDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JavaScriptCoreDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EF1BF91F3DA5C700B29691 /* JavaScriptCoreDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreDemoUITests.m; sourceTree = "<group>"; };
 		56EF1BFB1F3DA5C700B29691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56EF1C071F3DA5FC00B29691 /* OCJSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCJSManager.h; sourceTree = "<group>"; };
+		56EF1C081F3DA5FC00B29691 /* OCJSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCJSManager.m; sourceTree = "<group>"; };
+		56EF1C0C1F3DA86500B29691 /* JavaScriptCoreDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JavaScriptCoreDemo.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +106,11 @@
 		56EF1BD31F3DA5C700B29691 /* JavaScriptCoreDemo */ = {
 			isa = PBXGroup;
 			children = (
+				56EF1C0C1F3DA86500B29691 /* JavaScriptCoreDemo.html */,
 				56EF1BD71F3DA5C700B29691 /* AppDelegate.h */,
 				56EF1BD81F3DA5C700B29691 /* AppDelegate.m */,
+				56EF1C071F3DA5FC00B29691 /* OCJSManager.h */,
+				56EF1C081F3DA5FC00B29691 /* OCJSManager.m */,
 				56EF1BDA1F3DA5C700B29691 /* ViewController.h */,
 				56EF1BDB1F3DA5C700B29691 /* ViewController.m */,
 				56EF1BDD1F3DA5C700B29691 /* Main.storyboard */,
@@ -252,6 +260,7 @@
 				56EF1BE41F3DA5C700B29691 /* LaunchScreen.storyboard in Resources */,
 				56EF1BE11F3DA5C700B29691 /* Assets.xcassets in Resources */,
 				56EF1BDF1F3DA5C700B29691 /* Main.storyboard in Resources */,
+				56EF1C0D1F3DA86500B29691 /* JavaScriptCoreDemo.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +287,7 @@
 			files = (
 				56EF1BDC1F3DA5C700B29691 /* ViewController.m in Sources */,
 				56EF1BD91F3DA5C700B29691 /* AppDelegate.m in Sources */,
+				56EF1C091F3DA5FC00B29691 /* OCJSManager.m in Sources */,
 				56EF1BD61F3DA5C700B29691 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
