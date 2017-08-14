@@ -24,17 +24,16 @@
     self.webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     self.webView.delegate = self;
-
     [self.view addSubview:self.webView];
     
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     self.context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-    
     OCJSManager *manager = [[OCJSManager alloc]initWithWebView:self.webView];
-    
     self.context[@"jscore"] = manager;
+//    [self.context[@"octojs"] callWithArguments:@[@"hahah"]];
+    
     
 }
 - (void)didReceiveMemoryWarning {

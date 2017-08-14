@@ -9,7 +9,7 @@
 #import "OCJSManager.h"
 @protocol MangagerExport <JSExport>
 
-JSExportAs(callBack, - (void)printSomethings:(NSString *)string);
+JSExportAs(callBack, - (void)printSomethings:(NSString *)string callBack:(NSString *)callback);
 
 @end
 @interface OCJSManager()<MangagerExport>
@@ -25,8 +25,12 @@ JSExportAs(callBack, - (void)printSomethings:(NSString *)string);
     return self;
 }
 
-- (void)printSomethings:(NSString *)string{
+- (void)printSomethings:(NSString *)string callBack:(NSString *)callback{
     NSLog(@"%@",string);
+    
+    NSString *callbackJS = [NSString stringWithFormat:@"%@('我是callback')", callback];
+    [self.webView stringByEvaluatingJavaScriptFromString:callbackJS];
+
 }
 
 @end
