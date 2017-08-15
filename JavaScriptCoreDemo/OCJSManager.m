@@ -7,6 +7,8 @@
 //
 
 #import "OCJSManager.h"
+#import <UIKit/UIKit.h>
+#import <StoreKit/StoreKit.h>
 @protocol MangagerExport <JSExport>
 
 JSExportAs(callBack, - (void)printSomethings:(NSString *)string callBack:(NSString *)callback);
@@ -26,8 +28,11 @@ JSExportAs(callBack, - (void)printSomethings:(NSString *)string callBack:(NSStri
 }
 
 - (void)printSomethings:(NSString *)string callBack:(NSString *)callback{
-    NSLog(@"%@",string);
     
+    [SKStoreReviewController requestReview];
+    
+    NSLog(@"%@",string);
+    NSLog(@"%f",self.webView.frame.size.width);
     NSString *callbackJS = [NSString stringWithFormat:@"%@('我是callback')", callback];
     [self.webView stringByEvaluatingJavaScriptFromString:callbackJS];
 

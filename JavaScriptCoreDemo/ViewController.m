@@ -29,6 +29,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
     self.context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     OCJSManager *manager = [[OCJSManager alloc]initWithWebView:self.webView];
     self.context[@"jscore"] = manager;
